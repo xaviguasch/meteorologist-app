@@ -9,7 +9,5 @@ request({
 }, (err, response) => {
     const data = response.body.currently
 
-    console.log(data);
-
-
+    console.log(`It is currently ${data.temperature} degrees out. There is a ${data.precipProbability}% chance of rain.`);
 })
